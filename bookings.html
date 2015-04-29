@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bookings</title>
+        <meta name="keywords" content="physio, acupuncture, health, Lucan, PF Physio, home, phone, information">
+        <meta name="description" content="Book an appointment. Physiotherapy is provided on an appointment only basis. Appointments are 30 minutes in duration.">
+        <meta charset="UTF-8"> 
+        <!--<link href="reset.css" rel="stylesheet" />-->
+        <link href="style.css" rel="stylesheet" />
+        <link rel="icon" href="favicon.ico"/>
+        <script src="scripts.js"></script>
+        <!--<script src="jquery-1.11.1.min.js"></script>
+		<script src="scripts.js"></script>-->
+        
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        
+        
+<!--************LOGO and TEL:************-->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="images/scheme05/logo2.png" alt="Company Logo"/></a>
+            </div>
+            <div id="topTel">
+                <span>T:(01) 6280855 E:info@pfphysio.ie</span>
+                <img src="images/scheme05/exercisesWhite.png" alt="telephone"/>
+            </div>
+            
+            
+<!--************NAVIGATION BAR************-->
+            <nav>                
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li><a href="about.html">About</a>
+                        <ul class="btm_round_corn">
+                            <li>
+                                <a href="staff.html">Staff</a>
+                            </li>
+                            <li>
+                                <a href="location.html">Location</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                        <ul class="btm_round_corn">
+                            <li>
+                                <a href="services.html#physiotherapy">Physotherapy</a>
+                            </li>
+                            <li>
+                                <a href="services.html#acupuncture">Acupuncture</a>
+                            </li>
+                            <li>
+                                <a href="services.html#sportInjury">Sports Injury Treatment</a>
+                            </li>
+                            <li>
+                                <a href="services.html#osteopathy">Osteopathy</a>
+                            </li>
+                            <li>
+                                <a href="services.html#exercise">Excercise Therapy</a>
+                            </li>
+                            <li>
+                                <a href="services.html#massage">Massage Therapy</a>
+                            </li>
+                            <li>
+                                <a href="services.html#orthodics">Orthotics</a>
+                            </li>
+                            <li>
+                                <a href="services.html#needling">Dry Needling</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bookings.html">Bookings</a>
+                        <ul class="btm_round_corn">
+                            <li>
+                                <a href="bookings.html#prices">Prices</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="testimonials.html">Testimonials</a></li>                    
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="main">
+            
+            
+            
+<!--************Contact US panel************-->
+            <aside id="right_side">
+                <form>
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <label for="contactName">Name*</label>
+                        </li>
+                        <li>
+                            <input type="text" id="contactName" required pattern="[A-Za-z]*"/>
+                        </li>
+                        <li>
+                            <label for="contactMobile">Mobile Phone Number*</label>
+                        </li>
+                        <li>                    
+                        <input type="text" id="contactMobile" required pattern="[0-9]*"/>
+                        </li>
+                        <li>
+                            <label for="contactHome">Home Phone Number</label>
+                        </li>
+                        <li>
+                            <input type="text" id="contactHome"/>
+                        </li>
+                        <li>
+                            <label for="contactEmail">Email Address*</label>
+                        </li>
+                        <li>                    
+                            <input type="email" id="contactEmail" required />
+                        </li>
+                        <li>
+                            <label for="contactReqCall">Request Call For Which Service*</label>
+                        </li>
+                        <li>
+                            <input type="text" id="contactReqCall" required/>
+                        </li>
+                        <li>
+                            <label for="contactInfo">Additional Information*</label>
+                        </li>
+                        <li>
+                            <textarea rows="5" cols="20" id="contactInfo" required>Enter information HERE</textarea>
+                        </li>
+                        <li>
+                            <input id="mainSubBTN" type="submit" value="Submit"/>                            
+                        </li>
+                    </ul>
+                </form>
+                
+                <a href="http://www.iscp.ie/" target="_blank"><img src="images/mainPage/memberOf.png" id="membersImg" alt="MISCP"/></a>
+            </aside>
+
+<!--************MAIN SECTION OF PAGE************-->
+            <section id="main_section">
+                <!--<h1>Book an appointment</h1> -->     
+                <h1>BOOK AN APPOINTMENT</h1>
+                <form id="bookingsForm">
+                    <ul>
+                        <li>
+                            <label for="name">Name*</label>
+                        </li>
+                        <li>
+                            <input type="text" id="name" required pattern="[A-Za-z]*"/>                
+                        </li>
+                        <li>
+                            <label for="dob">Date Of Birth*</label>
+                        </li>
+                        <li>
+                            <input type="date" id="dob" required/>
+                        </li>
+                        <li>
+                            <label for="phone">Contact Number*</label>
+                        </li>
+                        <li>
+                            <input type="text" id="phone" required pattern="[0-9]*"/>
+                        </li>
+                        <li>
+                            <label for="email">Email Address*</label>
+                        </li>
+                        <li>
+                            <input type="email" id="email" required/>
+                        </li>
+                        <li>
+                            <label for="cons">Consultation With*</label>
+                        </li>
+                        <li>
+                            <select id="cons" required>
+                                <option value="">Please select</option>
+                                <option value="dom">Dominic Maguire</option>
+                                <option value="emma">Emma Jones</option>
+                                <option value="rob">Robert Nolan</option>
+                                <option value="niamh">Niamh Boland</option>
+                                <option value="emy">Emily Farell</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="conType">Consultation Type*</label>
+                        </li>
+                        <li>
+                            <select id="conType" required>
+                                <option value="">Please select one</option>
+                                <option value="priv">Private</option>
+                                <option value="prsi">PRSI</option>
+                                <option value="med">Medical Card</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="appDate">Appointment Date*</label>
+                        </li>
+                        <li>
+                            <input type="date" id="appDate" required/>
+                        </li>
+                        <li>
+                            <label for="appTime">Appointment Time*</label>
+                        </li>                        
+                        <li>
+                            <input type="time" id="appTime" required/>
+                        </li>
+                        <li>
+                            <input id="bookSubmit" type="submit" value="Submit"/>
+                        </li>
+                    </ul>
+                </form>
+                
+                <div id="hours">
+                    <ul>
+                        <li id="opHrs">Openning hours:</li>
+                        <li>Mon-Fri:</li>
+                        <li>8:00-19:30</li>
+                        <li>Sat: Appointments by request only</li>
+                        <li>10:00-16:00</li>
+                        <li>Sun:</li>
+                        <li>CLOSED</li>
+                    </ul>                    
+                </div>
+                
+                
+                <div id="priceList">
+                    <a name="prices"></a>
+                    <h4>Physiotherapy is provided on an appointment only basis.  Appointments are 30 minutes in duration.</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li> Standard session (up to 30min):  &euro;50</li>
+                        <li> Student: &euro;45</li>
+                        <li> Medical Card Holder: &euro;40</li>
+                        <li> Double session (up to 1hour): &euro;95</li>
+                        <li> Dry Needling: &euro;0 &#45; &euro;10 additional depending on needle use</li>
+                    </ul>
+                </div>
+                
+            </section>
+            
+            
+
+            
+<!--************FOOTER************-->
+            <footer> 
+                
+                
+                <ul id="footerNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" onclick="tcon()">Terms and Conditions</a></li>
+                    <li><a href="#" onclick="privacy()">Privacy Policy</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="#">Back to Top</a></li>
+                </ul>
+                
+                
+                
+                
+                <!--NOTE: I had to change this from paragraph as in faq page the script hides the paragraps-->
+                <ul id="footerAddress">
+                    <li>Address: Main Street, Lucan, Co. Dublin T:(01)6280855 E:info@pfphysio.ie</li>
+                </ul>
+                
+                
+                
+                <div id="partners">
+                    <a href="http://www.avivahealth.ie" target="_blank"><img src="images/insLogos/aviva.png" alt="aviva link"/></a>
+                    <a href="https://www.vhi.ie/healthinsurance/index.jsp" target="_blank"><img src="images/insLogos/vhi.png" alt="vhi link"/></a>
+                    <a href="http://www.centrichealth.ie/" target="_blank"><img src="images/insLogos/centric.png" alt="centric link"/></a>
+                    <a href="http://euromedic.ie/" target="_blank"><img src="images/insLogos/euroMedic.png" alt="euroM link"/></a>
+                    <a href="http://www.layahealthcare.ie" target="_blank"><img src="images/insLogos/layaLogo.png" alt="laya link"/></a>        
+                </div>
+                
+                <div id="copy">
+                    <p>
+                    Web page design &copy; 2014 by <a href="mailto:vasioki@gmail.com">Alexei Suleac</a> student &#64; 
+                    <a href="http://www.dbs.ie" target="_blank">DBS Ireland</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        
+    </body>
+    
+</html>

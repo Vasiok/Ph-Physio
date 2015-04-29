@@ -1,0 +1,770 @@
+/**************************************************/
+/********************MAIN PAGE*********************/
+/**************************************************/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/scheme05/bkg.jpg);
+    background-repeat: repeat;
+}
+
+
+#logo
+{
+    float: left;
+    position: relative;
+    margin-left: 5%;
+    top: 2.500em;
+}
+
+#topTel
+{
+    float: right;    
+    font-weight: 600;
+    padding: 10px;
+    margin: 1.250em 3.750em 1.250em 1.250em;
+    color: white;
+    font-size: 1.250em;
+    background-color: #093690;
+    border-radius: 0.625em;
+    margin-top: 2.500em;
+    margin-right: 7%;
+}
+
+
+
+#topTel img
+{
+    margin-left: 2%;
+    margin-top: 0.625em;
+    
+}
+
+
+
+
+/*******DROP DOWN MENU*******/
+nav
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul
+{
+    margin: 0;
+}
+
+nav
+{    
+    clear: both;
+    position: relative;
+    top: 10px;
+    font-size: 18px;  
+    width: 100%;
+    background-color: #093690;
+    border-radius: 10px;    
+    margin-bottom: 80px;   
+    
+}
+
+
+nav ul ul 
+{
+	display: none;
+}
+
+
+nav ul li:hover > ul 
+{
+    display: block;
+    z-index: 10;
+}
+
+
+nav ul 
+{
+    background: #093690;
+	padding: 10px 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;        
+}
+
+
+nav ul li 
+{
+	float: left;       
+}
+
+
+
+nav ul li a 
+{
+    display: block; 
+    padding: 20px 40px;
+	color: white; 
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    background-color: #011D33;
+}
+
+
+nav ul ul 
+{
+	background: #093690; 
+    border-radius: 0px;
+    padding: 0;
+	position: absolute;  
+}
+	
+
+nav ul ul li 
+{
+    float: none; 
+    position: relative;
+}
+
+
+
+nav ul ul li a:hover 
+{
+    background: #011D33; 
+}
+
+/*round corners for bottom part of the vertical navigation*/
+.btm_round_corn
+{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+/*******MAIN SECTION*******/
+
+#main_section
+{    
+    position: relative;
+    float: left;
+    color: #093690;  
+    width: 70%;
+    top: -40px;
+    margin-left: 2%;    
+}
+
+
+/***SLIDE SHOW***/
+
+#cycler
+{    
+	position:relative; 
+    top: 30px;     
+    
+}
+
+
+
+#cycler img
+{
+	position:absolute;    
+	z-index:1;  
+    width: 100%;
+}
+
+#cycler img.active
+{
+	z-index:4;
+}
+
+
+
+/***Sidebar***/
+aside ul
+{
+    list-style: none;
+}
+
+
+/***Contact us sidebar***/
+#right_side
+{    
+    color: #093690;
+    float: right;
+    top: -40px;
+    position: relative;
+    width: 22%;    
+}
+
+
+
+#right_side input, #right_side textarea, #right_side select
+{
+    font-size: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70%;
+    margin: 5px;
+}
+
+
+#right_side label
+{
+    margin-left: 2%;;
+}
+
+#right_side h3
+{
+    margin-left: 11%;
+}
+
+/***Main submit button***/
+#mainSubBTN
+{
+    
+    position: relative;
+    max-width: 50%;    
+	padding: 10px 20px; 
+    left: 10%;
+    background-color: #093690;
+    color: white;
+    font-size: 17px !important;    	
+}
+
+/***Members image***/
+#membersImg
+{
+    margin-left: 70px;
+    margin-top: 50px;
+    width: 50%;
+}
+
+
+/*******FOOTER AREA*******/
+footer
+{
+    clear: both;    
+    position: relative;
+    top: 3.125em;
+    padding: 0;
+    width: 100%;    
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #093690;
+    color: white;    
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul a:hover
+{
+    background-color: #011D33;
+}
+
+footer ul
+{        
+    font-size: 17px;
+    text-align: center;
+}
+
+#footerNav
+{    
+    position: relative;
+    float: left; 
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#footerNav li
+{    
+    display: inline-block; 
+}
+
+#footerNav li:hover
+{
+    background-color: #011D33;
+}
+
+#footerNav li a
+{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+
+#footerAddress
+{    
+    position: relative;
+    float: left; 
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#footerAddress li
+{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;    
+}
+
+#partners
+{    
+    clear: both;
+    position: relative; 
+    text-align: center;    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9%;    
+}
+
+#partners img
+{    
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#disclaimer
+{
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 1.250em;
+    text-align: center;
+    margin-top: 1.250em;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+
+
+#copy
+{    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.500em;
+    text-align: center;    
+}
+
+/*this is only for FAQ page*/
+#copy ul
+{
+    list-style-type: none;    
+}
+    
+
+
+
+
+/**************************************************/
+/********************BOOKINGS PAGE*****************/
+/**************************************************/
+
+
+#bookingsForm
+{    
+    position: relative;
+    float: left;
+    margin-left: 1%;    
+    width: 40%;
+}
+
+#bookingsForm ul
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#hours
+{
+    border: 2px solid #093690;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    margin-left: 5%;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+#hours ul
+{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#opHrs
+{
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+#bookingsForm input, #bookingsForm textarea, #bookingsForm select
+{
+    font-size: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70%;
+    margin: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#bookSubmit
+{
+    
+    position: relative;
+    max-width: 50%;    
+    height: 3.125em;
+    background-color: #093690;
+    color: white;
+    font-size: 17px !important;        
+}
+
+#priceList
+{
+    clear: both;
+    position: relative;
+    top: 4.375em; 
+    font-size: 20px;
+    margin-bottom: 6.250em;
+    border: 2px solid #093690;
+    border-radius: 10px;
+}
+
+#priceList ul
+{
+    list-style-type: none;
+}
+
+#priceList h4
+{
+    margin-left: 2.500em;
+}
+
+
+
+
+
+/**************************************************/
+/********************FAQ PAGE**********************/
+/**************************************************/
+
+#faqPage
+{
+    width: 75%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+}
+
+#faqPage h2
+{
+    border-radius: 10px;
+}
+
+
+#faqPage h1
+{
+    text-align: center;
+    font-family: Helvetica, Arial;
+    color: #093690;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#faqPage h2
+{
+    font-family: Helvetica, Arial;
+    margin: 1px;
+    color: #ffffff;
+    padding: 6px 20px;
+    cursor: pointer;
+    position: relative;
+    background-color: #093690;
+}
+
+
+#faqPage p
+{
+    font-family: Helvetica, Arial;
+    padding: 5px 10px;
+    color: #093690;
+    font-size: 1.250em;
+    font-weight: bold;    
+}
+
+
+
+
+
+/**************************************************/
+/********************ABOUT PAGE********************/
+/**************************************************/
+
+#about
+{
+    margin-top: 6.250em;
+}
+
+#about section
+{    
+    clear: both;    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 90px;    
+}
+
+#about section p
+{    
+    font-size: 1.250em;
+}
+
+#finalHigh
+{
+    font-weight: bold;
+}
+
+.imagePos
+{
+    float: left;    
+    margin: 1.250em;
+    margin-top: 0;
+    margin-right: 3.125em;    
+}
+
+
+
+
+/**************************************************/
+/********************STAFF PAGE********************/
+/**************************************************/
+
+#staff
+{
+    margin-top: 6.250em;
+}
+
+#staff section
+{    
+    /*border: 1px solid black;*/
+    clear: both;    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 6.250em;    
+}
+
+#staff section p
+{    
+    font-size: 1.250em;
+}
+
+
+.imagePos
+{
+    float: left;    
+    margin: 1.250em;
+    margin-top: 0;
+    margin-right: 3.125em;    
+    margin-bottom: 6.250em;
+}
+
+
+/**************************************************/
+/*****************LOCATION PAGE********************/
+/**************************************************/
+
+.bold
+{
+    font-weight: bold;
+}
+
+#location ul
+{
+    list-style-type: none;
+}
+
+#location
+{
+    position: relative;
+    float: left;
+    top: 6.250em;        
+    margin-right: 10px;
+    font-size: 20px;    
+    width: 35%;
+    padding-right: 1.250em;
+    border: 2px solid #093690;
+    border-radius: 10px;   
+}
+
+#googleMap
+{
+    position: relative;
+    margin-top: 6.250em;
+    margin-right: 0;
+    width: 60%;    
+    float: left;    
+}
+
+#googleMap iframe
+{    
+    border: 1px solid #093690;    
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    height: 28.125em;
+}
+
+
+/**************************************************/
+/*****************SERVICES PAGE********************/
+/**************************************************/
+
+#services
+{
+    position: relative;
+    float: left;
+    top: 6.250em;
+    font-size: 20px;
+}
+
+#services section
+{
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+#services h4
+{
+    font-style: italic;
+}
+
+
+/**************************************************/
+/***************TESTIMONIALS PAGE******************/
+/**************************************************/
+
+
+#testimonials
+{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+#testimonials h3
+{
+    margin-bottom: 10%;
+}
+
+
+
+/**************************************************/
+/******************SITEMAP PAGE********************/
+/**************************************************/
+
+
+#sitemap
+{
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    margin-left: 30px;    
+}
+
+#sitemap ul
+{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#sitemap ul li
+{
+    margin-bottom: 10px;
+}
+
+#sitemap ul ul
+{
+    list-style-type: circle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
